@@ -124,7 +124,7 @@ const About = () => {
                 duration: ''
               },
               {
-                role: 'Selenium',
+                role: 'Selenium with eclipse ',
                 duration: ''
               }
 
