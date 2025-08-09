@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Resume from './pages/Resume';
 import Gallery from './pages/Gallery';
+import './App.css'; // Import CSS
 
 const App = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -29,17 +30,21 @@ const App = () => {
     <>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
+
+      {/* Scroll-to-top Button */}
       {showScroll && (
-        <button className='scrollTop' onClick={scrollToTop} title='Scroll to top'>↑</button>
+        <button className="scrollTop" onClick={scrollToTop} title="Scroll to top">
+          ↑
+        </button>
       )}
     </>
   );

@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+
+.scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #facc15;
+  color: #0e0e1a; 
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.scrollTop:hover {
+  background-color: #eab308; /* Darker yellow */
+  transform: translateY(-3px) scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .scrollTop {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}

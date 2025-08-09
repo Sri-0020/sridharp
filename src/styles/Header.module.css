@@ -1,3 +1,4 @@
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -10,11 +11,14 @@
   top: 0;
   z-index: 100;
 }
-
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #facc15;
+}
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav a {
@@ -28,4 +32,54 @@
 .nav a:hover,
 .active {
   color: #facc15;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.hamburger:hover {
+  color: #facc15; /* Yellow on hover */
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  /* Show hamburger on small screens */
+  .hamburger {
+    display: block;
+    z-index: 200;
+  }
+
+  /* Hide nav by default on mobile */
+  .nav {
+    position: absolute;
+    top: 70px; /* Below header */
+    right: -100%;
+    flex-direction: column;
+    background-color: #0e0e1a;
+    width: 220px;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Show nav when menu is active */
+  .activeMenu {
+    right: 0;
+  }
+
+  /* Mobile link styles */
+  .nav a {
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    text-align: left;
+  }
 }
