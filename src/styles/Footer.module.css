@@ -1,0 +1,29 @@
+.footer {
+  background-color: #0e0e1a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #1f2937;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.social {
+  margin-top: 0.5rem;
+}
+
+.social a {
+  margin: 0 0.6rem;
+  color: #facc15;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}

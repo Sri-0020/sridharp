@@ -1,0 +1,115 @@
+.projects {
+  padding: 4rem 2rem;
+  background-color: #0b0e1b;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ffc857;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #1a1d2e;
+  border-radius: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border: 1px solid #ffc857;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #ffc857;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin: 1rem 0 0.5rem 0;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #b0b8c4;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+a {
+  color: #ffc857;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.linkIcon {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design Enhancements */
+@media screen and (max-width: 1024px) {
+  .projectList {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectList {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+}
