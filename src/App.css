@@ -37,13 +37,12 @@
   }
 }
 
-
 .scrollTop {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   background-color: #facc15;
-  color: #0e0e1a; 
+  color: #0e0e1a;
   border: none;
   outline: none;
   width: 45px;
@@ -53,20 +52,32 @@
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
-  z-index: 999;
+  z-index: 99999;
 }
 
 .scrollTop:hover {
-  background-color: #eab308; /* Darker yellow */
+  background-color: #eab308;
   transform: translateY(-3px) scale(1.05);
 }
 
 @media (max-width: 768px) {
   .scrollTop {
-    bottom: 20px;
-    right: 20px;
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
+    bottom: 15px;
+    right: 15px;
   }
 }
+
+@media (max-width: 480px) {
+  .scrollTop {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    bottom: 12px;
+    right: 12px;
+  }
+}
+
+
